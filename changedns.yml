@@ -1,0 +1,5 @@
+interface: "AirPort"
+services:
+    Unblock-US: "111.118.175.56 118.127.33.48"
+    OpenDNS: "208.67.222.222 208.67.220.220"
+    Google: "8.8.8.8 8.8.4.4"
