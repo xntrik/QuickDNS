@@ -10,7 +10,7 @@ require 'pathname'
 APPNAME   = "Quick DNS"
 TARGET    = "#{APPNAME}.app"
 VERSION   = "0.1"
-RESOURCES = ['*.rb', '*.lproj', '*.yml']
+RESOURCES = ['*.rb', '*.lproj', '*.yml', '*.icns']
 PKGINC    = [TARGET, 'README.rdoc']
 BUNDLEID  = "org.un-excogitate.changedns"
 BUNDLESIG = "mate"

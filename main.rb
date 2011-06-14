@@ -18,7 +18,7 @@ end
 
 path = Pathname.new OSX::NSBundle.mainBundle.resourcePath.fileSystemRepresentation
 Pathname.glob(path + '*.rb') do |file|
-  next if file.to_s.match('/changedns.rb') #Otherwise it loads the command line interface and borks!
+  next if file.to_s.match('/quickdns.rb') #Otherwise it loads the command line interface and borks!
 	next if file.to_s == __FILE__
 	require(file)
 end

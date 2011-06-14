@@ -10,12 +10,12 @@ class GetCurrentSettings < NSObject
 
 
     ib_action :clickGetCurrentSettings do |sender|
-      networkinterface = ChangeDNSConfiguration.instance.config['interface']
+      networkinterface = QuickDNSConfiguration.instance.config['interface']
       @outputTextBox.setStringValue("Current DNS Settings:\n" + `networksetup -getdnsservers #{networkinterface}`)
     end
     
     def awakeFromNib
-      networkinterface = ChangeDNSConfiguration.instance.config['interface']
+      networkinterface = QuickDNSConfiguration.instance.config['interface']
       @outputTextBox.setStringValue("Current DNS Settings:\n" + `networksetup -getdnsservers #{networkinterface}`)
     end
 end

@@ -13,7 +13,7 @@
 		<object class="NSMutableArray" key="IBDocument.EditedObjectIDs">
 			<bool key="EncodedWithXMLCoder">YES</bool>
 			<integer value="29"/>
-			<integer value="21"/>
+			<integer value="2"/>
 		</object>
 		<object class="NSArray" key="IBDocument.PluginDependencies">
 			<bool key="EncodedWithXMLCoder">YES</bool>
@@ -37,10 +37,10 @@
 				<string key="NSClassName">NSApplication</string>
 			</object>
 			<object class="NSWindowTemplate" id="432119249">
-				<int key="NSWindowStyleMask">15</int>
+				<int key="NSWindowStyleMask">1</int>
 				<int key="NSWindowBacking">2</int>
 				<string key="NSWindowRect">{{182, 489}, {408, 235}}</string>
-				<int key="NSWTFlags">1881669632</int>
+				<int key="NSWTFlags">807927808</int>
 				<string key="NSWindowTitle">Quick DNS</string>
 				<string key="NSWindowClass">NSWindow</string>
 				<object class="NSMutableString" key="NSViewClass">
@@ -103,9 +103,9 @@
 								<reference key="NSSupport" ref="689366240"/>
 								<reference key="NSControlView" ref="336676947"/>
 								<int key="NSButtonFlags">-2038284033</int>
-								<int key="NSButtonFlags2">129</int>
+								<int key="NSButtonFlags2">268435585</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">g</string>
 								<int key="NSPeriodicDelay">200</int>
 								<int key="NSPeriodicInterval">25</int>
 							</object>
@@ -245,9 +245,9 @@
 								<reference key="NSSupport" ref="689366240"/>
 								<reference key="NSControlView" ref="676665244"/>
 								<int key="NSButtonFlags">-2038284033</int>
-								<int key="NSButtonFlags2">129</int>
+								<int key="NSButtonFlags2">268435585</int>
 								<string key="NSAlternateContents"/>
-								<string key="NSKeyEquivalent"/>
+								<string key="NSKeyEquivalent">u</string>
 								<int key="NSPeriodicDelay">200</int>
 								<int key="NSPeriodicInterval">25</int>
 							</object>
@@ -456,6 +456,14 @@
 						<reference key="destination" ref="798045164"/>
 					</object>
 					<int key="connectionID">268</int>
+				</object>
+				<object class="IBConnectionRecord">
+					<object class="IBOutletConnection" key="connection">
+						<string key="label">myWindow</string>
+						<reference key="source" ref="149975329"/>
+						<reference key="destination" ref="432119249"/>
+					</object>
+					<int key="connectionID">273</int>
 				</object>
 			</object>
 			<object class="IBMutableOrderedSet" key="objectRecords">
@@ -786,13 +794,14 @@
 				</object>
 			</object>
 			<nil key="sourceID"/>
-			<int key="maxID">269</int>
+			<int key="maxID">273</int>
 		</object>
 		<object class="IBClassDescriber" key="IBDocument.Classes">
 			<object class="NSMutableArray" key="referencedPartialClassDescriptions">
 				<bool key="EncodedWithXMLCoder">YES</bool>
 				<object class="IBPartialClassDescription">
 					<string key="className">FirstResponder</string>
+					<string key="superclassName">NSObject</string>
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBUserSource</string>
 						<string key="minorKey"/>
@@ -868,10 +877,12 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>dropdowner</string>
+							<string>myWindow</string>
 							<string>outputTextBox</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
+							<string>id</string>
 							<string>id</string>
 							<string>id</string>
 						</object>
@@ -881,12 +892,17 @@
 						<object class="NSArray" key="dict.sortedKeys">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>dropdowner</string>
+							<string>myWindow</string>
 							<string>outputTextBox</string>
 						</object>
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<object class="IBToOneOutletInfo">
 								<string key="name">dropdowner</string>
+								<string key="candidateClassName">id</string>
+							</object>
+							<object class="IBToOneOutletInfo">
+								<string key="name">myWindow</string>
 								<string key="candidateClassName">id</string>
 							</object>
 							<object class="IBToOneOutletInfo">

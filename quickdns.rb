@@ -1,13 +1,13 @@
 #!/usr/bin/ruby
 require 'optparse'
-require 'changednsconfiguration'
+require 'quickdnsconfiguration'
 
 options = {} #Command line options
-networkinterface = ChangeDNSConfiguration.instance.config['interface'] #Read the config for the network interface
+networkinterface = QuickDNSConfiguration.instance.config['interface'] #Read the config for the network interface
 
 #Parse command line options
 optparse = OptionParser.new do |opts|
-	opts.banner = "Usage: changedns.rb [options]"
+	opts.banner = "Usage: quickdns.rb [options]"
 
 	options[:service] = nil
 	opts.on('-s', '--service SERVICE', 'Set AirPort DNS settings to this service') do |service|
@@ -15,7 +15,7 @@ optparse = OptionParser.new do |opts|
 	end
 
 	opts.on('-l', '--list', 'List the available DNS services') do
-		ChangeDNSConfiguration.instance.config['services'].each do |name,ports|
+		QuickDNSConfiguration.instance.config['services'].each do |name,ports|
 			puts "#{name} - #{ports}"
 		end
 		exit
@@ -39,7 +39,7 @@ if options[:service].nil?
 	puts "Try the -h option"
 	exit
 else
-	dnsstring = ChangeDNSConfiguration.instance.config['services'][options[:service]]
+	dnsstring = QuickDNSConfiguration.instance.config['services'][options[:service]]
 	cmd = "networksetup -setdnsservers #{networkinterface} #{dnsstring}"
 	system cmd
 end
