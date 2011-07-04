@@ -1,1 +1,21 @@
 = Quick DNS
+
+QuickDNS started out as a quick ruby script (quickdns.rb) to quickly modify the DNS settings on my Macbook's Airport network interface.
+
+= Usage
+
+ Usage: quickdns.rb [options]
+    -s, --service SERVICE            Set AirPort DNS settings to this service
+    -l, --list                       List the available DNS services
+    -d, --dns                        List the current DNS settings applied to your AirPort
+    -h, --help                       Displays this screen
+
+= Quick DNS GUI
+
+After hacking up the above, I thought it'd also be fun to play around with RubyCocoa to build an OSX GUI version of the app, mainly so I could quickly load quickdns with something like Quicksilver to change my DNS settings. If you have RubyCocoa set up and working (I've been using OSX' Ruby 1.8.7) you should be able to build the GUI version by running "rake".
+
+= History
+
+Version 0.1 of QuickDNS has been around since around May 2011
+
+ - First release
